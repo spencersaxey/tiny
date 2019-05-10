@@ -1,0 +1,18 @@
+#N canvas 12 158 1057 773 10;
+#X obj 101 101 cnv 15 73 23 empty empty empty 20 12 1 14 -261371 -1
+0;
+#X obj 168 225 outlet;
+#X text 129 102 midi in;
+#X obj 249 13 notein;
+#X obj 281 127 pack f f f;
+#X obj 106 107 bng 15 250 50 0 empty empty empty 17 7 0 10 -261371
+-1 -1;
+#X obj 258 60 poly 8 1;
+#X connect 3 0 5 0;
+#X connect 3 0 6 0;
+#X connect 3 1 6 1;
+#X connect 4 0 1 0;
+#X connect 6 0 4 0;
+#X connect 6 1 4 1;
+#X connect 6 2 4 2;
+#X coords 0 -1 1 1 75 25 2 100 100;

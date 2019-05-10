@@ -1,0 +1,21 @@
+#N canvas 719 231 450 507 10;
+#X obj 101 102 cnv 15 73 123 empty empty empty 20 12 0 14 -204786 -66577
+0;
+#X obj 242 63 inlet~ signal;
+#X obj 201 378 dac~;
+#X obj 108 123 vsl 8 85 0 0.98 0 1 \$0-vol_send \$0-vol_recv empty
+0 -9 0 10 -204786 -1 -1 1714 1;
+#X obj 41 48 loadbang;
+#X msg 43 108 0.2;
+#X obj 219 283 *~;
+#X obj 18 79 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 123 113 master volume  , f 7;
+#X connect 1 0 6 1;
+#X connect 3 0 6 0;
+#X connect 4 0 7 0;
+#X connect 5 0 3 0;
+#X connect 6 0 2 0;
+#X connect 6 0 2 1;
+#X connect 7 0 5 0;
+#X coords 0 -1 1 1 75 125 2 100 101;
